@@ -21,8 +21,8 @@ type Action struct { // Структура Action
 
 func main() {
 	var action = &Action{Human: Human{name: "Ivan", age: 21}}
-	fmt.Println(action.getHumanAge())
-	fmt.Println(action.getHumanName())
+	fmt.Println(action.getHumanAge()) // Вызываем методы у наследника
+	fmt.Println(action.getHumanName()) // Вызываем методы у наследника
 }
 
 // https://golangify.com/composition-and-forwarding
